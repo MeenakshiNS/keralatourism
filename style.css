@@ -19,6 +19,14 @@
     font-weight: 500;
 
 }
+
+.banner img{
+    margin-top: 50px;
+    width: 70%;
+    position: relative;
+    left: 15%;
+
+}
 @media(max-width:400px){
     .navbar {
         width: 100%;
@@ -28,6 +36,7 @@
         width: 100%;
     }
 
+
 }
 @media (max-width:500px) {
     .navbar img{
@@ -36,4 +45,14 @@
 
     }
     
+}
+@media(max-width:951px){
+    .banner img{      
+        margin-top: 10px;
+        width: 80%;
+        position: relative;
+        left: 10%;
+        height:60px;        
+    }
+
 }
