@@ -19,12 +19,15 @@
     font-weight: 500;
 
 }
-
+.banner{
+    background-color: rgb(227,231,241);
+}
 .banner img{
     margin-top: 50px;
     width: 70%;
     position: relative;
     left: 15%;
+    margin-bottom: 50px;
 
 }
 @media(max-width:400px){
@@ -52,7 +55,8 @@
         width: 80%;
         position: relative;
         left: 10%;
-        height:80px;        
+        height:80px;   
+        margin-bottom: 10px;     
     }
 
 }
