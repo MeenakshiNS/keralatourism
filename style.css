@@ -30,6 +30,25 @@
     margin-bottom: 50px;
 
 }
+
+.exp{
+    color: #003366;
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 60px;
+}
+
+.expmore{
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #003366;
+}
 @media(max-width:400px){
     .navbar {
         width: 100%;
@@ -59,4 +78,18 @@
         margin-bottom: 10px;     
     }
 
+}
+
+@media(max-width:302px){
+    .scrollcard img{
+        height: 50%;
+        width: 20%;
+
+    }
+    /* .scrollcard .card{
+        width: 2px;
+    }
+    .scrollcard .col-sm-6{
+        width:90px;
+    } */
 }
