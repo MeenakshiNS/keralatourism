@@ -75,6 +75,17 @@
 #thingstodo .card-text{
     color: #fff;
 }
+
+#whatsnew ul li{
+    color: rgb(51,122,183);
+    font-size:medium;
+}
+
+#whatsnew ul a{
+    text-decoration: none;
+}
+
+
 @media(max-width:400px){
     .navbar {
         width: 100%;
