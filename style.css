@@ -49,6 +49,32 @@
     color: #ffffff;
     background-color: #003366;
 }
+
+.topdes{
+    background-color: rgba(227, 231, 241, 0.785);
+}
+
+.topdes .card-body{
+    background-color:rgba(0, 0, 0, 0.758);
+
+}
+
+.topdes .card-text{
+    color: #fff;
+}
+
+#thingstodo{
+    background-image: url('https://www.keralatourism.org/responsible-tourism/images/rt-bnnr-inner.jpg');
+}
+
+#thingstodo .card-body{
+    background-color:rgba(0, 0, 0, 0.758);
+
+}
+
+#thingstodo .card-text{
+    color: #fff;
+}
 @media(max-width:400px){
     .navbar {
         width: 100%;
