@@ -84,6 +84,9 @@
 #whatsnew ul a{
     text-decoration: none;
 }
+#whathappen .card-body{
+    background-color: #ffffff;
+}
 
 
 @media(max-width:400px){
