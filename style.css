@@ -92,6 +92,13 @@
     background-color: #003366;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+#icons .icon{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    text-align: center;
+    padding: 25px;
+}
 
 @media(max-width:400px){
     .navbar {
@@ -166,6 +173,7 @@
 @media(max-width:241px){
     .form1 .col-sm-12 .navbar-brand{
         font-size: 10px;
+        justify-content: space-around;
 
     }
 }
