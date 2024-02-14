@@ -100,6 +100,19 @@
     padding: 25px;
 }
 
+#footer1 ul li{
+   list-style: none;
+}
+
+#footer1 li.headlist{
+    color: #003366;font-family: Quicksand;font-size: 20px;
+}
+#footer1 li{
+    font-size: small;
+}
+
+
+
 @media(max-width:400px){
     .navbar {
         width: 100%;
