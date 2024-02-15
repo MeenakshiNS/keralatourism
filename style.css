@@ -190,3 +190,40 @@
 
     }
 }
+
+
+@media(max-width:1024px){
+    .playstore{
+        position: absolute;top: 8rem;left: 70rem;position: fixed;background-color: green;height: 5rem;width: 10rem
+
+    }
+
+}
+
+@media(max-width:300px){
+    #footer1 #sub{
+        position: absolute;
+        margin-top: 40px;
+        margin-left: 2px;
+    }
+}
+
+@media(min-width:320px){
+    #footer1 #recru{
+       position: relative;
+       left: 5rem;
+    }
+}
+
+@media(min-width:1300px){
+    #footer1 #recru{
+       position: relative;
+       left: 35rem;
+    }
+}
+
+@medi(max-width:840px){
+    #footer1{
+        width:100%;
+    }
+}
