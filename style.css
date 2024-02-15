@@ -112,6 +112,21 @@
 }
 
 
+.transparent-navbar {
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-colored {
+    background-color: #003366;
+}
+
+#navbarSupportedContent {
+    background-color: #003366; /* Set your desired color here */
+    
+}
+
+
 
 @media(max-width:400px){
     .navbar {
@@ -222,8 +237,14 @@
     }
 }
 
-@medi(max-width:840px){
+@media(max-width:840px){
     #footer1{
         width:100%;
     }
+}
+
+@media(min-width:988px){
+#navbarSupportedContent{
+    background-color: transparent;
+}
 }
