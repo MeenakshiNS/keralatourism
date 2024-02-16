@@ -375,3 +375,9 @@
     }
 
 }
+
+@media(max-width:1060px){
+    #carouselExample .carousel-item img{
+height: 30rem;
+    }
+}
