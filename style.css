@@ -55,7 +55,17 @@
 }
 
 .topdes .card-body{
-    background-color:rgba(0, 0, 0, 0.758);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 10px 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
 
 }
 
@@ -68,7 +78,17 @@
 }
 
 #thingstodo .card-body{
-    background-color:rgba(0, 0, 0, 0.758);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 10px 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
 
 }
 
@@ -91,6 +111,7 @@
 #tour-package .card:hover{
     background-color: #003366;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    
 }
 #icons .icon{
     width: 5rem;
@@ -124,6 +145,55 @@
 #navbarSupportedContent {
     background-color: #003366; /* Set your desired color here */
     
+}
+
+
+
+.gallery{
+    width: 900px;
+    display: flex;
+    overflow-x: scroll;
+}
+
+
+.gallery div{
+    width: 100%;
+    display:grid;
+    /* images to disply in one row */
+    grid-template-columns: auto auto auto;
+    grid-gap:20px;  
+    padding: 10px;
+
+    flex: none;
+}
+
+.gallery div img{
+    width: 100%;
+    filter: grayscale(100%);
+    transition: transform 0.5s;
+}
+
+.gallery::-webkit-scrollbar{
+    display: none;
+}
+
+.gallery-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10% auto;
+}
+
+#backBtn,#nextBtn{
+    width: 50px;
+    cursor:pointer;
+    margin: 40px;
+}
+
+.gallery div img:hover{
+    filter: grayscale(0);
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 

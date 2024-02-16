@@ -97,52 +97,70 @@
 
     <!-- img ends -->
 
+
+
+
+    
    <!-- scrolling card1 start -->
 
 
 <div class="container text-center justify-content-center">
   <h1 class="exp text-center mt-4 mb-4">Experience Kerala</h1>
+<!-- 
+  <div class="scroll-container">
+    <div class="row justify-content-between scrollcard">
+      <div class="col-md-3 col-sm-6 col-xs-6">
+        
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-6">
+        
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-6">
+    
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-6">
+      
+      </div>
+    </div>
+  </div> -->
 
-<div class="row justify-content-between scrollcard">
-    <div class="col-md-3 col-sm-6 col-xs-6">
-      <div class="card" >
-  <img src="https://www.keralatourism.org/images/homecontentimage/desktop/yoga5.jpg" class="card-img-top" alt="...">
-  <!-- <div class="card-body">
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  </div> -->
-</div>
+  <div class="gallery-wrap">
+    <!-- <img src="./images/back.png" id="backBtn" /> -->
+    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="228" fill="currentColor" class="bi bi-arrow-left-square-fill" viewBox="0 0 16 16" id="backBtn" style="color: #003366;">
+      <path d="M16 14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2zm-4.5-6.5H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5a.5.5 0 0 0 0-1"/>
+    </svg >
+    <div class="gallery">
+      <div>
+        <span ><img src="https://www.keralatourism.org/images/homecontentimage/desktop/judaisam13.jpg" />
+         
+      </span>
+        <span><img src="https://www.keralatourism.org/images/homecontentimage/desktop/ecotourism.jpg" /></span>
+        <span><img src="https://www.keralatourism.org/images/homecontentimage/desktop/Experience_Kerala1.jpg" /></span>
+      </div>
+
+      <div>
+        <span><img src="https://www.keralatourism.org/images/homecontentimage/desktop/RT-2.jpg" /></span>
+        <span><img src="https://www.keralatourism.org/images/homecontentimage/desktop/yoga5.jpg" /></span>
+        <span><img src="https://www.keralatourism.org/images/homecontentimage/desktop/Theyyam2.jpg" /></span>
+      </div>
     </div>
-    <div class="col-md-3 col-sm-6 col-xs-6">
-      <div class="card" >
-  <img src="https://www.keralatourism.org/images/homecontentimage/desktop/Theyyam2.jpg" class="card-img-top" alt="...">
-  <!-- <div class="card-body">
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  </div> -->
-</div>
-    </div>
-    <div class="col-md-3 col-sm-6 col-xs-6">
-      <div class="card" >
-  <img src="https://www.keralatourism.org/images/homecontentimage/desktop/judaisam13.jpg" class="card-img-top" alt="...">
-  <!-- <div class="card-body">
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  </div> -->
-</div>
-    </div>
-    <div class="col-md-3 col-sm-6 col-xs-6">
-      <div class="card" >
-  <img src="https://www.keralatourism.org/images/homecontentimage/desktop/Experience_Kerala1.jpg" class="card-img-top" alt="...">
-  <!-- <div class="card-body">
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  </div> -->
-</div>
-    </div>
+
+    <!-- <img src="./images/next.png" id="nextBtn" /> -->
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="228" fill="currentColor" class="bi bi-arrow-right-square-fill" id="nextBtn" viewBox="0 0 16 16" style="color: #003366;">
+      <path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1"/>
+    </svg>
   </div>
+
+
+
+
   <button class="expmore mt-5 mb-5">
     FIND MORE EXPERIENCES >  
   </button>
 </div>
  
-
+   
 
 
    <!-- scrolling card1 ends -->
@@ -870,6 +888,30 @@
 
  
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+ <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+ <script>
+   let scrollContainer = document.querySelector(".gallery");
+   let backBtn = document.querySelector("#backBtn");
+   let nextBtn = document.querySelector("#nextBtn");
+
+   scrollContainer.addEventListener("wheel", (evt) => {
+     evt.preventDefault();
+     scrollContainer.scrollLeft += evt.deltaY;
+     scrollContainer.style.scrollBehavior = "auto";
+   });
+
+   nextBtn.addEventListener("click", () => {
+     scrollContainer.style.scrollBehavior = "smooth";
+     scrollContainer.scrollLeft += 900;
+   });
+
+   backBtn.addEventListener("click", () => {
+     scrollContainer.style.scrollBehavior = "smooth";
+
+     scrollContainer.scrollLeft -= 900;
+   });
+ </script>
+ 
  <script>
   document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener("scroll", function() {
