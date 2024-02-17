@@ -199,10 +199,16 @@
 #myCarousel {
     margin-top: 50px;
 }
-#scrl .expmore{
-    position: relative;left: 27rem;
-}
+.card-container { position: relative; overflow: hidden; }
 
+.card-hover { position: relative; }
+
+.card-hover .card-body-content { position: absolute; bottom: 0; left: 0;height: 100%;text-align: center;justify-content: center; right: 0; background-color: rgba(0,0,0,0.5); transition: transform 0.3s ease-out, opacity 0.3s ease-out; transform: translateY(100%); opacity: 0; padding: 1rem; text-align: center; }
+
+.card-hover:hover .card-body-content { transform: translateY(0); opacity: 1; }
+
+.card-hover::before { content: ""; position: absolute; top: 0; left: 0; bottom: 0; right: 0; background-image: url("https://www.keralatourism.org/images/homecontentimage/desktop/Experience_Kerala1.jpg"); background-size: cover; filter: blur(10px); z-index: -1; }
+      
 
 
 @media (max-width: 768px) {
