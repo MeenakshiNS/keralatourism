@@ -203,6 +203,8 @@
     position: relative;left: 27rem;
 }
 
+
+
 @media (max-width: 768px) {
     .carousel-inner .carousel-item>div {
         display: none;
